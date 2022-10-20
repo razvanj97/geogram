@@ -1,0 +1,101 @@
+@import "/src/theme/variables.css";
+
+.post {
+	margin: 2em 1em;
+	padding-bottom: 0.2em;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0.1px 0.1px 25px rgba(150, 150, 150, 0.299);
+	max-width: 900px;
+}
+
+.button-icon {
+	color: var(--ion-color-light);
+}
+
+/* -- Post style -- */
+.post-image {
+	min-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.post-body {
+	padding: 0 1em;
+}
+
+.post-button {
+	margin-left: 0.5em;
+}
+
+.post-lower-body {
+	display: block;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	padding-bottom: 0.5em;
+	/* border-bottom: 1px solid rgb(153, 153, 153); */
+	/* background-color: yellow; */
+}
+
+.description {
+	padding-bottom: 0.5em;
+	border-bottom: 0.1px solid rgb(200, 200, 200);
+	font-size: 1.2em;
+	font-family: "Inconsolata", monospace;
+}
+
+/* -- Post Body text --*/
+.coordonate {
+	padding: 0;
+	margin: 0.2em 0;
+}
+
+/* -- Buttons Style -- */
+.button-icon {
+	font-size: 3em;
+	padding-left: 0;
+}
+
+.button-inner {
+	width: 2em !important;
+}
+
+.buttons-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.post-button {
+	--border-radius: 50px !important;
+	--padding-start: 0.2em;
+	--padding-end: 0.2em;
+	max-width: 2.5em;
+	height: 2.5em;
+	display: inline-block;
+}
+
+/* -- Dark Mode --*/
+@media (prefers-color-scheme: dark) {
+	.post {
+		box-shadow: 0.1px 0.1px 25px var(--ion-color-danger);
+	}
+
+	.post-button {
+		margin-left: 0.5em;
+		box-shadow: 0.1px 0.1px 15px var(--ion-color-danger);
+		border-radius: 50px;
+	}
+
+	.button-icon {
+		color: var(--ion-color-tertiary);
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.ionpage {
+		display: inline-block !important;
+		margin: auto;
+		box-sizing: border-box;
+	}
+}

@@ -1,0 +1,15 @@
+.create-post-page-content {
+	padding-top: 100px;
+}
+
+.create-post-form {
+	/* padding: 50% 10px 0; */
+	text-align: center;
+	border-radius: 50px;
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0 15px;
+}
