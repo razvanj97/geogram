@@ -103,7 +103,7 @@ const AddPostForm = () => {
 					/>
 				</IonItem>
 
-				<IonButton onClick={() => takePicture()}>Take picture</IonButton>
+				<IonButton onClick={() => takePicture()}>Take photo</IonButton>
 
 				<IonButton ref={submitButtonRef} type="submit">
 					Save
@@ -114,5 +114,5 @@ const AddPostForm = () => {
 		</>
 	);
 };
-
+// Adds an export
 export default AddPostForm;
